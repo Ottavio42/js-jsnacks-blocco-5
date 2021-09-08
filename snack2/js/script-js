@@ -63,7 +63,7 @@ var sommaCorte = 0;
 var sommaLunghe = 0;
 for ( var i = 0; i < zucchine.length; i++) {
     
-    if(zucchine[i].lunghezza <25){
+    if(zucchine[i].lunghezza < 30){
         zucchineCorte.push(zucchine[i].peso)
         var pesoTotC = parseInt(zucchineCorte[i]);
         sommaCorte += pesoTotC;
