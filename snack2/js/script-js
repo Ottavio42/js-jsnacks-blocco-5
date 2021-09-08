@@ -1,0 +1,81 @@
+var zucchine = [
+    {
+        "varieta": "zucchina nera",
+        "peso" : 60,
+        "lunghezza" : 20
+    },
+    {
+        "varieta": "zucchina romanesca",
+        "peso" : 45,
+        "lunghezza" : 35
+    },
+    {
+        "varieta": "zucchina ortolana di Faenza",
+        "peso" : 55,
+        "lunghezza" : 25
+    },
+    {
+        "varieta": "zucchina lunga Fiorentina",
+        "peso" : 65,
+        "lunghezza" : 70
+    },
+    {
+        "varieta": "zucchina siciliana",
+        "peso" : 30,
+        "lunghezza" : 45
+    },
+    {
+        "varieta": "zucchina striata di napoli",
+        "peso" : 75,
+        "lunghezza" : 25
+    },
+    {
+        "varieta": "zucchina bianca triestina",
+        "peso" : 15,
+        "lunghezza" : 50
+    },
+    {
+        "varieta": "zucchina rigata pugliese",
+        "peso" : 80,
+        "lunghezza" : 35
+    },
+    {
+        "varieta": "zucchina tonda di piacenza",
+        "peso" : 50,
+        "lunghezza" : 5
+    },
+    {
+        "varieta": "zucchina tonda di nizza",
+        "peso" : 30,
+        "lunghezza" : 3
+    },
+];
+
+
+
+
+
+
+
+var zucchineLunghe = [];
+var zucchineCorte = [];
+var sommaCorte = 0;
+var sommaLunghe = 0;
+for ( var i = 0; i < zucchine.length; i++) {
+    
+    if(zucchine[i].lunghezza <25){
+        zucchineCorte.push(zucchine[i].peso)
+        var pesoTotC = parseInt(zucchineCorte[i]);
+        sommaCorte += pesoTotC;
+    }
+    else{
+        zucchineLunghe.push(zucchine[i].peso)
+        var pesoTotL = parseInt(zucchineLunghe[i]);
+        sommaLunghe += pesoTotL;
+    }
+    
+}
+console.log(zucchineLunghe);
+console.log(zucchineCorte);
+console.log(sommaCorte);
+console.log(sommaLunghe);
