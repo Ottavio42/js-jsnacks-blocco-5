@@ -16,4 +16,5 @@ function fondere(array1,array2){
     return result;
 }
 var array1=[1,2,3,4], array2=["a","b","c"];
-console.log fondere(array1,array2));
+
+console.log(fondere(array1,array2));
